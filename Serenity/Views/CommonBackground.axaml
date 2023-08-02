@@ -87,49 +87,50 @@
                 </Animation>
             </Style.Animations>
         </Style>
-        
+
         <Style Selector=":is(Control).Layer3">
             <Style.Animations>
                 <Animation Duration="0:0:18" IterationCount="Infinite">
                     <KeyFrame KeyTime="0:0:0">
                         <Setter Property="Opacity" Value="0.8" />
-                    </KeyFrame> 
+                    </KeyFrame>
                     <KeyFrame KeyTime="0:0:4.567">
                         <Setter Property="Opacity" Value="0.1" />
-                    </KeyFrame> 
+                    </KeyFrame>
                     <KeyFrame KeyTime="0:0:7.167">
                         <Setter Property="Opacity" Value="0.2" />
-                    </KeyFrame> 
+                    </KeyFrame>
                     <KeyFrame KeyTime="0:0:16.1">
                         <Setter Property="Opacity" Value="0.8" />
-                    </KeyFrame> 
+                    </KeyFrame>
                     <KeyFrame KeyTime="0:0:18">
                         <Setter Property="Opacity" Value="0.8" />
-                    </KeyFrame> 
+                    </KeyFrame>
                 </Animation>
             </Style.Animations>
         </Style>
 
 
     </UserControl.Styles>
-    <Panel>
-        <Panel Width="500" Height="300">
-            <Panel.Background>
-                <ImageBrush Source="avares://Serenity/Assets/Background.png"></ImageBrush>
-            </Panel.Background>
-            <Panel Classes="Layer3" Background="Green" Opacity="0.5" VerticalAlignment="Bottom"
-                   HorizontalAlignment="Stretch"
-                   Width="500" Height="118" />
-            <Panel Classes="Layer2" Background="Pink" Opacity="0.5" Margin="0,0,16,12" VerticalAlignment="Bottom"
-                   HorizontalAlignment="Right"
-                   Width="250" Height="265" />
-            <Panel Classes="Layer1" Background="Red" Opacity="0.5" Margin="0,0,0,1" VerticalAlignment="Bottom"
-                   HorizontalAlignment="Right"
-                   Width="174" Height="280" />
-            <Panel Classes="Shard1" Background="Magenta" Opacity="0.5" VerticalAlignment="Bottom"
-                   HorizontalAlignment="Right"
-                   Width="12" Height="110" />
+    <Viewbox>
+        <Panel>
+            <Panel Width="500" Height="300">
+                <Panel.Background>
+                    <ImageBrush Source="avares://Serenity/Assets/Background.png"></ImageBrush>
+                </Panel.Background>
+                <Image Classes="Layer3" Source="avares://Serenity/Assets/Layer3.png" Opacity="0.5" VerticalAlignment="Bottom"
+                       HorizontalAlignment="Stretch"
+                       Width="500" Height="118" />
+                <Image Classes="Layer2" Source="avares://Serenity/Assets/Layer2.png" Opacity="0.5" Margin="0,0,16,12" VerticalAlignment="Bottom"
+                       HorizontalAlignment="Right"
+                       Width="250" Height="265" />
+                <Image Classes="Layer1" Source="avares://Serenity/Assets/Layer1.png" Opacity="0.5" Margin="0,0,0,1" VerticalAlignment="Bottom"
+                       HorizontalAlignment="Right"
+                       Width="174" Height="280" />
+                <Panel Classes="Shard1" Background="Magenta" Opacity="0.5" VerticalAlignment="Bottom"
+                       HorizontalAlignment="Right"
+                       Width="12" Height="110" />
+            </Panel>
         </Panel>
-    </Panel>
-    <!-- </Viewbox> -->
+    </Viewbox>
 </UserControl>
