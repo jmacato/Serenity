@@ -1,0 +1,135 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Serenity.Views.CommonBackground">
+    <UserControl.Styles>
+        <Style Selector=":is(Control).Shard1">
+            <Style.Animations>
+                <Animation Duration="0:0:18" IterationCount="Infinite">
+
+                    <KeyFrame KeyTime="0:0:0">
+                        <Setter Property="(TranslateTransform.X)" Value="-275" />
+                        <Setter Property="(TranslateTransform.Y)" Value="-80" />
+                    </KeyFrame>
+                    <KeyFrame KeyTime="0:0:9.9">
+                        <Setter Property="(TranslateTransform.X)" Value="-330" />
+                        <Setter Property="(TranslateTransform.Y)" Value="-80" />
+                    </KeyFrame>
+                    <KeyFrame KeyTime="0:0:10">
+                        <Setter Property="(TranslateTransform.X)" Value="-100" />
+                        <Setter Property="(TranslateTransform.Y)" Value="-40" />
+                    </KeyFrame>
+                    <KeyFrame KeyTime="0:0:18">
+                        <Setter Property="(TranslateTransform.X)" Value="-55" />
+                        <Setter Property="(TranslateTransform.Y)" Value="-40" />
+                    </KeyFrame>
+                </Animation>
+            </Style.Animations>
+        </Style>
+
+        <Style Selector=":is(Control).Layer1">
+            <Style.Animations>
+                <Animation Duration="0:0:18" IterationCount="Infinite">
+                    <KeyFrame KeyTime="0:0:0">
+                        <Setter Property="Opacity" Value="0.0" />
+                    </KeyFrame>
+                    <KeyFrame KeyTime="0:0:3.733">
+                        <Setter Property="Opacity" Value="0.0" />
+                    </KeyFrame>
+                    <KeyFrame KeyTime="0:0:4.967">
+                        <Setter Property="Opacity" Value="0.6" />
+                    </KeyFrame>
+                    <KeyFrame KeyTime="0:0:5.833">
+                        <Setter Property="Opacity" Value="0.6" />
+                    </KeyFrame>
+                    <KeyFrame KeyTime="0:0:9.2">
+                        <Setter Property="Opacity" Value="0.0" />
+                    </KeyFrame>
+                    <KeyFrame KeyTime="0:0:11.667">
+                        <Setter Property="Opacity" Value="0.5" />
+                    </KeyFrame>
+                    <KeyFrame KeyTime="0:0:14.2">
+                        <Setter Property="Opacity" Value="0.4" />
+                    </KeyFrame>
+                    <KeyFrame KeyTime="0:0:18">
+                        <Setter Property="Opacity" Value="0.0" />
+                    </KeyFrame>
+                </Animation>
+            </Style.Animations>
+        </Style>
+
+        <Style Selector=":is(Control).Layer2">
+            <Style.Animations>
+                <Animation Duration="0:0:18" IterationCount="Infinite">
+                    <KeyFrame KeyTime="0:0:0">
+                        <Setter Property="Opacity" Value="0.0" />
+                    </KeyFrame>
+                    <KeyFrame KeyTime="0:0:3.667">
+                        <Setter Property="Opacity" Value="0.6" />
+                    </KeyFrame>
+                    <KeyFrame KeyTime="0:0:7.5">
+                        <Setter Property="Opacity" Value="0.0" />
+                    </KeyFrame>
+                    <KeyFrame KeyTime="0:0:9.6">
+                        <Setter Property="Opacity" Value="0.1" />
+                    </KeyFrame>
+                    <KeyFrame KeyTime="0:0:12.4">
+                        <Setter Property="Opacity" Value="0.1" />
+                    </KeyFrame>
+                    <KeyFrame KeyTime="0:0:16.233">
+                        <Setter Property="Opacity" Value="0.0" />
+                    </KeyFrame>
+                    <KeyFrame KeyTime="0:0:18">
+                        <Setter Property="Opacity" Value="0.0" />
+                    </KeyFrame>
+                </Animation>
+            </Style.Animations>
+        </Style>
+        
+        <Style Selector=":is(Control).Layer3">
+            <Style.Animations>
+                <Animation Duration="0:0:18" IterationCount="Infinite">
+                    <KeyFrame KeyTime="0:0:0">
+                        <Setter Property="Opacity" Value="0.8" />
+                    </KeyFrame> 
+                    <KeyFrame KeyTime="0:0:4.567">
+                        <Setter Property="Opacity" Value="0.1" />
+                    </KeyFrame> 
+                    <KeyFrame KeyTime="0:0:7.167">
+                        <Setter Property="Opacity" Value="0.2" />
+                    </KeyFrame> 
+                    <KeyFrame KeyTime="0:0:16.1">
+                        <Setter Property="Opacity" Value="0.8" />
+                    </KeyFrame> 
+                    <KeyFrame KeyTime="0:0:18">
+                        <Setter Property="Opacity" Value="0.8" />
+                    </KeyFrame> 
+                </Animation>
+            </Style.Animations>
+        </Style>
+
+
+    </UserControl.Styles>
+    <Panel>
+        <Panel Width="500" Height="300">
+            <Panel.Background>
+                <ImageBrush Source="avares://Serenity/Assets/Background.png"></ImageBrush>
+            </Panel.Background>
+            <Panel Classes="Layer3" Background="Green" Opacity="0.5" VerticalAlignment="Bottom"
+                   HorizontalAlignment="Stretch"
+                   Width="500" Height="118" />
+            <Panel Classes="Layer2" Background="Pink" Opacity="0.5" Margin="0,0,16,12" VerticalAlignment="Bottom"
+                   HorizontalAlignment="Right"
+                   Width="250" Height="265" />
+            <Panel Classes="Layer1" Background="Red" Opacity="0.5" Margin="0,0,0,1" VerticalAlignment="Bottom"
+                   HorizontalAlignment="Right"
+                   Width="174" Height="280" />
+            <Panel Classes="Shard1" Background="Magenta" Opacity="0.5" VerticalAlignment="Bottom"
+                   HorizontalAlignment="Right"
+                   Width="12" Height="110" />
+        </Panel>
+    </Panel>
+    <!-- </Viewbox> -->
+</UserControl>
